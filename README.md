@@ -1,4 +1,7 @@
 # LC-OS-Project
+LC-OS-Project is an applied, practitioner-facing system for long-term, governed human–AI collaboration.
+It provides a concrete LC-OS adoption kit — including a field manual, quick start, templates, and real execution examples — designed to help humans work reliably with AI over extended horizons.
+
 Applied practitioner system for adopting LC-OS.
 LC-OS adoption kit (Field Manual, Quick Start, Templates, Examples)
 
