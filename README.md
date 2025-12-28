@@ -2,6 +2,12 @@
 Applied practitioner system for adopting LC-OS.
 LC-OS adoption kit (Field Manual, Quick Start, Templates, Examples)
 
+Who this is for-
+Practitioners who want to adopt LC-OS in real work with AI systems over extended periods.
+
+Who this is not for-
+One-off prompting, casual experimentation, or short-term demos.
+
 ## Relationship to LC-OS Research Repository
 
 This repository contains the **practitioner-facing LC-OS Project**:
