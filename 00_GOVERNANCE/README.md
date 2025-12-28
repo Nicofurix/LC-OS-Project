@@ -8,4 +8,4 @@ Recommended reading order:
 3. Failure Budget
 4. Privacy & Redaction
 5. Versioning & Change Control
-6. Tool/Agent Guardrails
+6. Tool / Agent Guardrails
