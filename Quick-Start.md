@@ -109,12 +109,13 @@ These gains compound over time.
 
 **If minimal is working:** Continue with minimal. Do not add complexity you do not need.
 
-**If you want more structure:** Explore the `full/` folder for:
+**If you want more structure:** Explore the `full-LC-OS` folder for:
 - Repair Protocol (structured recovery)
 - Stability Pings (alignment checks)
 - Challenge Protocol (productive disagreement)
 - Affective Governance (tone management)
-
+- etc.
+- 
 **If failures are frequent:** Start using the Failure Log template to track patterns.
 
 ---
@@ -126,6 +127,7 @@ Any conversational AI: ChatGPT, Claude, Gemini, and others. The principles are m
 
 **Do I need to share the full Running Document every session?**
 Yes, at the start of each new session. The AI does not remember between sessions by default.
+ChatGPT / Claude has option to create Projects where you can upload files permanently so you don't to upload files in the chat at the start of every session.
 
 **What if my project is simple?**
 You might not need LC-OS. It is designed for work that spans multiple sessions where consistency matters.
