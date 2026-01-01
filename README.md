@@ -56,7 +56,7 @@ LC-OS is model-agnostic. It works with ChatGPT, Claude, Gemini, or any conversat
 
 ## Quick Start
 
-1. Download the `minimal/` folder
+1. Download the `minimal-LC-OS/` folder
 2. Copy the Running Document template
 3. Fill in your project details
 4. Share it with your AI at the start of each session
