@@ -14,7 +14,7 @@
 
 ## Step 1: Create Your Running Document (10 minutes)
 
-Copy the template from `minimal-LC-OS/`folder
+Copy **Running Document** template from `minimal-LC-OS`folder
 
 Fill in:
 - Project name
@@ -28,7 +28,7 @@ This is your shared memory. Everything important goes here.
 
 ## Step 2: Create Your Canonical Numbers File (5 minutes)
 
-Copy the template from `minimal-LC-OS`folder
+Copy the **Canonical Numbers** template from `minimal-LC-OS`folder
 
 Add any numbers that matter:
 - Budgets
