@@ -47,9 +47,8 @@ LC-OS is model-agnostic. It works with ChatGPT, Claude, Gemini, or any conversat
 - Repair Protocol — structured recovery process
 - Stability Ping — regular alignment checks
 - Challenge Protocol — productive disagreement
-- Communication Memo — tone and emotional stability rules
+- Affective Governance — tone and emotional stability rules
 - TraceSpec — detailed failure logging schema
-- Life System Master — Operating map defines cadence, modes, decision rights etc
 
 ### 📁 References/
 **Background reading.** Paper summaries, failure taxonomy, and conceptual foundations.
