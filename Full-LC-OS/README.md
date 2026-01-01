@@ -6,7 +6,7 @@
 
 ## What's Here
 
-The full toolkit includes everything you need to run LC-OS across complex, multi-domain work. It builds on the [Minimal tier](../minimal/) and adds:
+The full toolkit includes everything you need to run LC-OS across complex, multi-domain work. It builds on the Minimal-LC-OS and adds:
 
 - **Worked examples** as separate files (so templates stay clean)
 - **Repair Protocol** — structured recovery when things break
