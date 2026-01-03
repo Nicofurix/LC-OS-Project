@@ -8,6 +8,7 @@
 
 The full toolkit includes everything you need to run LC-OS across complex, multi-domain work. It builds on the [Minimal tier](../minimal/) and adds:
 
+- **Strategy Master** — long-term strategic truth (principles, policies, boundaries)
 - **Worked examples** as separate files (so templates stay clean)
 - **Repair Protocol** — structured recovery when things break
 - **Stability Ping** — regular alignment checks to catch drift early
@@ -26,12 +27,38 @@ Use this tier if:
 
 ## Contents
 
-### Core Templates
+### Core Templates (The Three Authoritative Files)
 
 | File | Purpose |
 |------|---------|
-| [running-document-template.md](./running-document-template.md) | Shared memory — context, decisions, rules |
-| [canonical-numbers-template.md](./canonical-numbers-template.md) | Single source of numerical truth |
+| [STRATEGY-MASTER-TEMPLATE.md](./STRATEGY-MASTER-TEMPLATE.md) | Strategic truth — principles, policies, boundaries (stable) |
+| [canonical-numbers-template.md](./canonical-numbers-template.md) | Numeric truth — single source for all numbers |
+| [running-document-template.md](./running-document-template.md) | Session truth — context, decisions, corrections (dynamic) |
+
+These three files form the **authoritative file architecture** from the LC-OS research. Each holds a different layer of truth:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    STRATEGY MASTER                          │
+│              (Principles, policies, logic)                  │
+│                  Rarely changes                             │
+│                     ↓ informs                               │
+├─────────────────────────────────────────────────────────────┤
+│                  CANONICAL NUMBERS                          │
+│              (Numeric truth, data, values)                  │
+│               Updated when data changes                     │
+│                     ↓ referenced by                         │
+├─────────────────────────────────────────────────────────────┤
+│                  RUNNING DOCUMENT                           │
+│         (Session decisions, corrections, context)           │
+│                Updated every session                        │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Failure Tracking
+
+| File | Purpose |
+|------|---------|
 | [failure-log-template.md](./failure-log-template.md) | Track what breaks and how it's fixed |
 
 ### Worked Examples
@@ -65,18 +92,33 @@ Use this tier if:
 
 You already have the Running Document, Canonical Numbers, and Failure Log. To upgrade:
 
-1. Review the **Repair Protocol** and start using it when things break
-2. Add **Stability Pings** after major milestones
-3. Read the **Affective Governance** rules and add relevant ones to your Running Document
-4. Use the **Challenge Protocol** when you disagree with the AI's reasoning
-5. If failures are frequent, consider adopting **TraceSpec** for more structured logging
+1. Create a **Strategy Master** for long-term principles and boundaries
+2. Review the **Repair Protocol** and start using it when things break
+3. Add **Stability Pings** after major milestones
+4. Read the **Affective Governance** rules and add relevant ones to your Running Document
+5. Use the **Challenge Protocol** when you disagree with the AI's reasoning
+6. If failures are frequent, consider adopting **TraceSpec** for more structured logging
 
 ### If you're starting fresh
 
-1. Start with the three core templates (Running Document, Canonical Numbers, Failure Log)
-2. Read the **Repair Protocol** — this is the most important addition
-3. Add protocols incrementally as you need them
-4. Don't try to adopt everything at once
+1. Start with the **three core templates** (Strategy Master, Canonical Numbers, Running Document)
+2. Add the **Failure Log** when you experience your first breakdown
+3. Read the **Repair Protocol** — this is the most important addition
+4. Add protocols incrementally as you need them
+5. Don't try to adopt everything at once
+
+### When do you need a Strategy Master?
+
+**Use it when:**
+- Your work spans multiple domains (pillars) requiring separation
+- You have long-term strategic logic that shouldn't be re-debated each session
+- Hard boundaries must be enforced consistently
+- Policies apply across many sessions
+
+**Skip it when:**
+- Your collaboration is simple and single-domain
+- The Running Document can carry your strategic context
+- You're just getting started (add it later if needed)
 
 ---
 
@@ -85,6 +127,14 @@ You already have the Running Document, Canonical Numbers, and Failure Log. To up
 Here's how all the pieces fit together:
 
 ```
+┌─────────────────────────────────────────────────────────┐
+│                  STRATEGIC LAYER                         │
+│                                                          │
+│   Strategy Master: Principles, boundaries, policies      │
+│                (rarely changes)                          │
+└─────────────────────────────────────────────────────────┘
+                            │
+                      informs ↓
 ┌─────────────────────────────────────────────────────────┐
 │                    DAILY OPERATION                       │
 │                                                          │
@@ -139,9 +189,9 @@ Here's how all the pieces fit together:
 
 1. **Governance enables reliability** — structure isn't overhead, it's what makes long-horizon work possible
 
-2. **Failures are data** — every breakdown, logged and repaired, makes the system stronger
+2. **Three sources of truth** — Strategy Master (stable logic), Canonical Numbers (numeric truth), Running Document (active state)
 
-3. **Single source of truth** — one Running Document, one Canonical Numbers file, one version of everything
+3. **Failures are data** — every breakdown, logged and repaired, makes the system stronger
 
 4. **Repair is a first-class process** — not an emergency, but a normal part of operation
 
